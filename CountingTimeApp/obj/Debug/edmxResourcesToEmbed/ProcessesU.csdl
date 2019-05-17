@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProcessesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Processes" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Processes" EntityType="ProcessesModel.Process" />
+    <EntitySet Name="ProcesUs" EntityType="ProcessesModel.ProcesU" />
+  </EntityContainer>
+  <EntityType Name="Process">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TotalTime" Type="DateTime" Precision="3" />
+    <Property Name="LastSesionTime" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="ProcesU">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="TotalTime" Type="DateTime" Precision="3" />
+    <Property Name="LastSesionTime" Type="DateTime" Precision="3" />
+  </EntityType>
+</Schema>
