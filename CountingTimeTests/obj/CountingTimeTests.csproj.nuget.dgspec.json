@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeTests\\CountingTimeTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeApp\\CountingTimeApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeApp\\CountingTimeApp.csproj",
+        "projectName": "CountingTimeApp",
+        "projectPath": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeApp\\CountingTimeApp.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeTests\\CountingTimeTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeTests\\CountingTimeTests.csproj",
+        "projectName": "CountingTimeTests",
+        "projectPath": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeTests\\CountingTimeTests.csproj",
+        "packagesPath": "C:\\Users\\pawel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\pawel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeApp\\CountingTimeApp.csproj": {
+                "projectPath": "C:\\Users\\pawel\\source\\repos\\CountingTimeApp\\CountingTimeApp\\CountingTimeApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[15.8.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.10.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.10.1, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

@@ -8,31 +8,19 @@
         Title="MainWindow" Height="600" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="73*"/>
-            <ColumnDefinition Width="117*"/>
-            <ColumnDefinition Width="206*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListView Margin="10,10,0,10" Name="lvUsers" HorizontalAlignment="Left" Grid.ColumnSpan="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Main Window Title" Width="120" DisplayMemberBinding="{Binding Path}" />
-                    <GridViewColumn Header="Operation time" Width="100" DisplayMemberBinding="{Binding StartTime}" />
-                    <GridViewColumn Header="Main Window Title" Width="120" DisplayMemberBinding="{Binding MainWindowTitle}" />
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button x:Name="refreshButton" Content="Refresh" HorizontalAlignment="Left" Margin="15,11,0,0" VerticalAlignment="Top" Width="75" Click="RefreshButton_ClickAsync" Grid.Column="2"/>
-        <Button x:Name="addProc" Content="&gt;&gt;" HorizontalAlignment="Left" Margin="15,36,0,0" VerticalAlignment="Top" Width="75" Grid.Column="2" Click="AddProc_Click"/>
-        <ListView Margin="176,15,0,5" Name="totalProc" HorizontalAlignment="Left" Grid.Column="2">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Operation time" Width="100" DisplayMemberBinding="{Binding StartTime}" />
-                    <GridViewColumn Header="Main Window Title" Width="120" DisplayMemberBinding="{Binding MainWindowTitle}" />
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button x:Name="removeProc" Content="Remove" Grid.Column="2" HorizontalAlignment="Left" Margin="96,114,0,0" VerticalAlignment="Top" Width="75" Click="RemoveProc_Click"/>
+        <Button x:Name="button" Content="Stats" HorizontalAlignment="Left" Margin="106,70,0,0" VerticalAlignment="Top" Width="74" IsEnabled="False"/>
+        <Button x:Name="button1" Content="Add Activity" HorizontalAlignment="Left" Margin="106,122,0,0" VerticalAlignment="Top" Width="75" Click="Button1_Click"/>
+        <DataGrid IsReadOnly="True" MouseDoubleClick="Row_MouseDoubleClick" x:Name="dataGrid" Grid.Column="1" HorizontalAlignment="Left" Height="569" Margin="10,0,0,0" VerticalAlignment="Top" Width="486">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Name}"  Header="Name"/>
+                <DataGridTextColumn Binding="{Binding Path}" Header="Path"/>
+                <DataGridTextColumn Binding="{Binding Time, StringFormat=hh\\:mm\\:ss}" Header="Time" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="loadFile" Content="Load File" HorizontalAlignment="Left" Margin="363,295,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="saveFile" Content="Save File" HorizontalAlignment="Left" Margin="363,329,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>

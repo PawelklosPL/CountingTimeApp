@@ -18,3 +18,5 @@ C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\bin\Debug\EntityFram
 C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\bin\Debug\EntityFramework.xml
 C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\obj\Debug\CountingTimeApp.csproj.CopyComplete
+C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\obj\Debug\AddActivity.g.cs
+C:\Users\pawel\source\repos\CountingTimeApp\CountingTimeApp\obj\Debug\AddActivity.baml
